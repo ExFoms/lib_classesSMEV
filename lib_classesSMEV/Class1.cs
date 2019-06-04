@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Xml.Serialization;
-// Test commit 
 public class VS00643v002_MZRV01
 /* Сведения для приема событий электронного заявления о выборе (замене) СМО на КУТФОМС  
  * VS00643v002_MZRV01
