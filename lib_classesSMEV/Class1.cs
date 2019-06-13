@@ -14254,3 +14254,1172 @@ public class adapterSmev1_3
     }
 }
 
+public class adapterSmev1_3_smev_message_exchange_directive
+{
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/directive/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/directive/1.3", IsNullable = false)]
+    public partial class Registry : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private RegistryRecord[] registryRecordField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("RegistryRecord")]
+        public RegistryRecord[] RegistryRecord
+        {
+            get
+            {
+                return this.registryRecordField;
+            }
+            set
+            {
+                this.registryRecordField = value;
+                this.RaisePropertyChanged("RegistryRecord");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/directive/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/directive/1.3", IsNullable = false)]
+    public partial class RegistryRecord : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private int recordIdField;
+
+        private Record recordField;
+
+        private System.Xml.XmlElement recordSignatureField;
+
+        /// <remarks/>
+        public int RecordId
+        {
+            get
+            {
+                return this.recordIdField;
+            }
+            set
+            {
+                this.recordIdField = value;
+                this.RaisePropertyChanged("RecordId");
+            }
+        }
+
+        /// <remarks/>
+        public Record Record
+        {
+            get
+            {
+                return this.recordField;
+            }
+            set
+            {
+                this.recordField = value;
+                this.RaisePropertyChanged("Record");
+            }
+        }
+
+        /// <remarks/>
+        public System.Xml.XmlElement RecordSignature
+        {
+            get
+            {
+                return this.recordSignatureField;
+            }
+            set
+            {
+                this.recordSignatureField = value;
+                this.RaisePropertyChanged("RecordSignature");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/directive/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/directive/1.3", IsNullable = false)]
+    public partial class Record : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private RecordContent recordContentField;
+
+        private AttachmentHeaderType[] attachmentHeaderListField;
+
+        private RefAttachmentHeaderType[] refAttachmentHeaderListField;
+
+        private System.Xml.XmlElement[] personalSignatureField;
+
+        private string idField;
+
+        /// <remarks/>
+        public RecordContent RecordContent
+        {
+            get
+            {
+                return this.recordContentField;
+            }
+            set
+            {
+                this.recordContentField = value;
+                this.RaisePropertyChanged("RecordContent");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("AttachmentHeader", IsNullable = false)]
+        public AttachmentHeaderType[] AttachmentHeaderList
+        {
+            get
+            {
+                return this.attachmentHeaderListField;
+            }
+            set
+            {
+                this.attachmentHeaderListField = value;
+                this.RaisePropertyChanged("AttachmentHeaderList");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+        [System.Xml.Serialization.XmlArrayItemAttribute("RefAttachmentHeader", IsNullable = false)]
+        public RefAttachmentHeaderType[] RefAttachmentHeaderList
+        {
+            get
+            {
+                return this.refAttachmentHeaderListField;
+            }
+            set
+            {
+                this.refAttachmentHeaderListField = value;
+                this.RaisePropertyChanged("RefAttachmentHeaderList");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("PersonalSignature")]
+        public System.Xml.XmlElement[] PersonalSignature
+        {
+            get
+            {
+                return this.personalSignatureField;
+            }
+            set
+            {
+                this.personalSignatureField = value;
+                this.RaisePropertyChanged("PersonalSignature");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
+        public string Id
+        {
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+                this.RaisePropertyChanged("Id");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/directive/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/directive/1.3", IsNullable = false)]
+    public partial class RecordContent : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private System.Xml.XmlElement anyField;
+
+        private string idField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAnyElementAttribute()]
+        public System.Xml.XmlElement Any
+        {
+            get
+            {
+                return this.anyField;
+            }
+            set
+            {
+                this.anyField = value;
+                this.RaisePropertyChanged("Any");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
+        public string Id
+        {
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+                this.RaisePropertyChanged("Id");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    public partial class RefAttachmentHeaderType : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string uuidField;
+
+        private string fileNameField;
+
+        private string namespaceUriField;
+
+        private string hashField;
+
+        private string mimeTypeField;
+
+        private byte[] signaturePKCS7Field;
+
+        private FileType[] archiveField;
+
+        /// <remarks/>
+        public string uuid
+        {
+            get
+            {
+                return this.uuidField;
+            }
+            set
+            {
+                this.uuidField = value;
+                this.RaisePropertyChanged("uuid");
+            }
+        }
+
+        /// <remarks/>
+        public string FileName
+        {
+            get
+            {
+                return this.fileNameField;
+            }
+            set
+            {
+                this.fileNameField = value;
+                this.RaisePropertyChanged("FileName");
+            }
+        }
+
+        /// <remarks/>
+        public string NamespaceUri
+        {
+            get
+            {
+                return this.namespaceUriField;
+            }
+            set
+            {
+                this.namespaceUriField = value;
+                this.RaisePropertyChanged("NamespaceUri");
+            }
+        }
+
+        /// <remarks/>
+        public string Hash
+        {
+            get
+            {
+                return this.hashField;
+            }
+            set
+            {
+                this.hashField = value;
+                this.RaisePropertyChanged("Hash");
+            }
+        }
+
+        /// <remarks/>
+        public string MimeType
+        {
+            get
+            {
+                return this.mimeTypeField;
+            }
+            set
+            {
+                this.mimeTypeField = value;
+                this.RaisePropertyChanged("MimeType");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
+        public byte[] SignaturePKCS7
+        {
+            get
+            {
+                return this.signaturePKCS7Field;
+            }
+            set
+            {
+                this.signaturePKCS7Field = value;
+                this.RaisePropertyChanged("SignaturePKCS7");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("File", IsNullable = false)]
+        public FileType[] Archive
+        {
+            get
+            {
+                return this.archiveField;
+            }
+            set
+            {
+                this.archiveField = value;
+                this.RaisePropertyChanged("Archive");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    public partial class FileType : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string nameField;
+
+        private string namespaceUriField;
+
+        /// <remarks/>
+        public string Name
+        {
+            get
+            {
+                return this.nameField;
+            }
+            set
+            {
+                this.nameField = value;
+                this.RaisePropertyChanged("Name");
+            }
+        }
+
+        /// <remarks/>
+        public string NamespaceUri
+        {
+            get
+            {
+                return this.namespaceUriField;
+            }
+            set
+            {
+                this.namespaceUriField = value;
+                this.RaisePropertyChanged("NamespaceUri");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    public partial class AttachmentHeaderType : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string contentIdField;
+
+        private string namespaceUriField;
+
+        private string mimeTypeField;
+
+        private byte[] signaturePKCS7Field;
+
+        private FileType[] archiveField;
+
+        /// <remarks/>
+        public string contentId
+        {
+            get
+            {
+                return this.contentIdField;
+            }
+            set
+            {
+                this.contentIdField = value;
+                this.RaisePropertyChanged("contentId");
+            }
+        }
+
+        /// <remarks/>
+        public string NamespaceUri
+        {
+            get
+            {
+                return this.namespaceUriField;
+            }
+            set
+            {
+                this.namespaceUriField = value;
+                this.RaisePropertyChanged("NamespaceUri");
+            }
+        }
+
+        /// <remarks/>
+        public string MimeType
+        {
+            get
+            {
+                return this.mimeTypeField;
+            }
+            set
+            {
+                this.mimeTypeField = value;
+                this.RaisePropertyChanged("MimeType");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
+        public byte[] SignaturePKCS7
+        {
+            get
+            {
+                return this.signaturePKCS7Field;
+            }
+            set
+            {
+                this.signaturePKCS7Field = value;
+                this.RaisePropertyChanged("SignaturePKCS7");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("File", IsNullable = false)]
+        public FileType[] Archive
+        {
+            get
+            {
+                return this.archiveField;
+            }
+            set
+            {
+                this.archiveField = value;
+                this.RaisePropertyChanged("Archive");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3", IsNullable = false)]
+    public partial class AttachmentHeaderList : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private AttachmentHeaderType[] attachmentHeaderField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("AttachmentHeader")]
+        public AttachmentHeaderType[] AttachmentHeader
+        {
+            get
+            {
+                return this.attachmentHeaderField;
+            }
+            set
+            {
+                this.attachmentHeaderField = value;
+                this.RaisePropertyChanged("AttachmentHeader");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3", IsNullable = false)]
+    public partial class AttachmentContentList : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private AttachmentContentType[] attachmentContentField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("AttachmentContent")]
+        public AttachmentContentType[] AttachmentContent
+        {
+            get
+            {
+                return this.attachmentContentField;
+            }
+            set
+            {
+                this.attachmentContentField = value;
+                this.RaisePropertyChanged("AttachmentContent");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    public partial class AttachmentContentType : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string idField;
+
+        private byte[] contentField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "ID")]
+        public string Id
+        {
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+                this.RaisePropertyChanged("Id");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
+        public byte[] Content
+        {
+            get
+            {
+                return this.contentField;
+            }
+            set
+            {
+                this.contentField = value;
+                this.RaisePropertyChanged("Content");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3", IsNullable = false)]
+    public partial class FSAttachmentsList : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private FSAuthInfo[] fSAttachmentField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("FSAttachment")]
+        public FSAuthInfo[] FSAttachment
+        {
+            get
+            {
+                return this.fSAttachmentField;
+            }
+            set
+            {
+                this.fSAttachmentField = value;
+                this.RaisePropertyChanged("FSAttachment");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    public partial class FSAuthInfo : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string uuidField;
+
+        private string userNameField;
+
+        private string passwordField;
+
+        private string fileNameField;
+
+        /// <remarks/>
+        public string uuid
+        {
+            get
+            {
+                return this.uuidField;
+            }
+            set
+            {
+                this.uuidField = value;
+                this.RaisePropertyChanged("uuid");
+            }
+        }
+
+        /// <remarks/>
+        public string UserName
+        {
+            get
+            {
+                return this.userNameField;
+            }
+            set
+            {
+                this.userNameField = value;
+                this.RaisePropertyChanged("UserName");
+            }
+        }
+
+        /// <remarks/>
+        public string Password
+        {
+            get
+            {
+                return this.passwordField;
+            }
+            set
+            {
+                this.passwordField = value;
+                this.RaisePropertyChanged("Password");
+            }
+        }
+
+        /// <remarks/>
+        public string FileName
+        {
+            get
+            {
+                return this.fileNameField;
+            }
+            set
+            {
+                this.fileNameField = value;
+                this.RaisePropertyChanged("FileName");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3", IsNullable = false)]
+    public partial class RefAttachmentHeaderList : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private RefAttachmentHeaderType[] refAttachmentHeaderField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("RefAttachmentHeader")]
+        public RefAttachmentHeaderType[] RefAttachmentHeader
+        {
+            get
+            {
+                return this.refAttachmentHeaderField;
+            }
+            set
+            {
+                this.refAttachmentHeaderField = value;
+                this.RaisePropertyChanged("RefAttachmentHeader");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3", IsNullable = false)]
+    public partial class MessageReference : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string idField;
+
+        private string valueField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
+        public string Id
+        {
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+                this.RaisePropertyChanged("Id");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public string Value
+        {
+            get
+            {
+                return this.valueField;
+            }
+            set
+            {
+                this.valueField = value;
+                this.RaisePropertyChanged("Value");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3", IsNullable = false)]
+    public partial class AckTargetMessage : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string idField;
+
+        private bool acceptedField;
+
+        private bool acceptedFieldSpecified;
+
+        private string valueField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
+        public string Id
+        {
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+                this.RaisePropertyChanged("Id");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public bool accepted
+        {
+            get
+            {
+                return this.acceptedField;
+            }
+            set
+            {
+                this.acceptedField = value;
+                this.RaisePropertyChanged("accepted");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool acceptedSpecified
+        {
+            get
+            {
+                return this.acceptedFieldSpecified;
+            }
+            set
+            {
+                this.acceptedFieldSpecified = value;
+                this.RaisePropertyChanged("acceptedSpecified");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public string Value
+        {
+            get
+            {
+                return this.valueField;
+            }
+            set
+            {
+                this.valueField = value;
+                this.RaisePropertyChanged("Value");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3", IsNullable = false)]
+    public partial class MessageTypeSelector : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string namespaceURIField;
+
+        private string rootElementLocalNameField;
+
+        private System.DateTime timestampField;
+
+        private string nodeIDField;
+
+        private string idField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "anyURI")]
+        public string NamespaceURI
+        {
+            get
+            {
+                return this.namespaceURIField;
+            }
+            set
+            {
+                this.namespaceURIField = value;
+                this.RaisePropertyChanged("NamespaceURI");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "NCName")]
+        public string RootElementLocalName
+        {
+            get
+            {
+                return this.rootElementLocalNameField;
+            }
+            set
+            {
+                this.rootElementLocalNameField = value;
+                this.RaisePropertyChanged("RootElementLocalName");
+            }
+        }
+
+        /// <remarks/>
+        public System.DateTime Timestamp
+        {
+            get
+            {
+                return this.timestampField;
+            }
+            set
+            {
+                this.timestampField = value;
+                this.RaisePropertyChanged("Timestamp");
+            }
+        }
+
+        /// <remarks/>
+        public string NodeID
+        {
+            get
+            {
+                return this.nodeIDField;
+            }
+            set
+            {
+                this.nodeIDField = value;
+                this.RaisePropertyChanged("NodeID");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
+        public string Id
+        {
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+                this.RaisePropertyChanged("Id");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.3", IsNullable = false)]
+    public partial class Timestamp : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string idField;
+
+        private System.DateTime valueField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "ID")]
+        public string Id
+        {
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+                this.RaisePropertyChanged("Id");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public System.DateTime Value
+        {
+            get
+            {
+                return this.valueField;
+            }
+            set
+            {
+                this.valueField = value;
+                this.RaisePropertyChanged("Value");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+}
+
