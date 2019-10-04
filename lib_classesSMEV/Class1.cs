@@ -4521,6 +4521,2872 @@ public class VS01285v001_TABL00
     }
 }
 
+public class VS01285v002_TABL00
+/* Сведения из ЕГР ЗАГС о государственной регистрации смерти 
+*  VS01285v002_TABL00
+* Версия 4.0.1
+*/
+{
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1", IsNullable = false)]
+    public partial class FATALZPRequest : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private FATALZPRequestСведРегСмерт[] сведРегСмертField;
+
+        private string идСведField;
+
+        private System.DateTime датаСведField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("СведРегСмерт")]
+        public FATALZPRequestСведРегСмерт[] СведРегСмерт
+        {
+            get
+            {
+                return this.сведРегСмертField;
+            }
+            set
+            {
+                this.сведРегСмертField = value;
+                this.RaisePropertyChanged("СведРегСмерт");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ИдСвед
+        {
+            get
+            {
+                return this.идСведField;
+            }
+            set
+            {
+                this.идСведField = value;
+                this.RaisePropertyChanged("ИдСвед");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime ДатаСвед
+        {
+            get
+            {
+                return this.датаСведField;
+            }
+            set
+            {
+                this.датаСведField = value;
+                this.RaisePropertyChanged("ДатаСвед");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public partial class FATALZPRequestСведРегСмерт : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private ОрганЗАГСТип органЗАГСField;
+
+        private FATALZPRequestСведРегСмертСтатусЗаписи статусЗаписиField;
+
+        private СведСвидетТип сведСвидетField;
+
+        private СведСвидетТип[] повтСвидетField;
+
+        private FATALZPRequestСведРегСмертПрдСведРег прдСведРегField;
+
+        private СведИзмАГСТип[] сведИспрАГСField;
+
+        private СведИзмАГСТип сведВосстанАГСField;
+
+        private СведИзмАГСТип сведАннулирАГСField;
+
+        private string номерЗаписField;
+
+        private System.DateTime датаЗаписField;
+
+        private string номерВерсField;
+
+        private System.DateTime датаВерсField;
+
+        /// <remarks/>
+        public ОрганЗАГСТип ОрганЗАГС
+        {
+            get
+            {
+                return this.органЗАГСField;
+            }
+            set
+            {
+                this.органЗАГСField = value;
+                this.RaisePropertyChanged("ОрганЗАГС");
+            }
+        }
+
+        /// <remarks/>
+        public FATALZPRequestСведРегСмертСтатусЗаписи СтатусЗаписи
+        {
+            get
+            {
+                return this.статусЗаписиField;
+            }
+            set
+            {
+                this.статусЗаписиField = value;
+                this.RaisePropertyChanged("СтатусЗаписи");
+            }
+        }
+
+        /// <remarks/>
+        public СведСвидетТип СведСвидет
+        {
+            get
+            {
+                return this.сведСвидетField;
+            }
+            set
+            {
+                this.сведСвидетField = value;
+                this.RaisePropertyChanged("СведСвидет");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ПовтСвидет")]
+        public СведСвидетТип[] ПовтСвидет
+        {
+            get
+            {
+                return this.повтСвидетField;
+            }
+            set
+            {
+                this.повтСвидетField = value;
+                this.RaisePropertyChanged("ПовтСвидет");
+            }
+        }
+
+        /// <remarks/>
+        public FATALZPRequestСведРегСмертПрдСведРег ПрдСведРег
+        {
+            get
+            {
+                return this.прдСведРегField;
+            }
+            set
+            {
+                this.прдСведРегField = value;
+                this.RaisePropertyChanged("ПрдСведРег");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("СведИспрАГС")]
+        public СведИзмАГСТип[] СведИспрАГС
+        {
+            get
+            {
+                return this.сведИспрАГСField;
+            }
+            set
+            {
+                this.сведИспрАГСField = value;
+                this.RaisePropertyChanged("СведИспрАГС");
+            }
+        }
+
+        /// <remarks/>
+        public СведИзмАГСТип СведВосстанАГС
+        {
+            get
+            {
+                return this.сведВосстанАГСField;
+            }
+            set
+            {
+                this.сведВосстанАГСField = value;
+                this.RaisePropertyChanged("СведВосстанАГС");
+            }
+        }
+
+        /// <remarks/>
+        public СведИзмАГСТип СведАннулирАГС
+        {
+            get
+            {
+                return this.сведАннулирАГСField;
+            }
+            set
+            {
+                this.сведАннулирАГСField = value;
+                this.RaisePropertyChanged("СведАннулирАГС");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НомерЗапис
+        {
+            get
+            {
+                return this.номерЗаписField;
+            }
+            set
+            {
+                this.номерЗаписField = value;
+                this.RaisePropertyChanged("НомерЗапис");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime ДатаЗапис
+        {
+            get
+            {
+                return this.датаЗаписField;
+            }
+            set
+            {
+                this.датаЗаписField = value;
+                this.RaisePropertyChanged("ДатаЗапис");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НомерВерс
+        {
+            get
+            {
+                return this.номерВерсField;
+            }
+            set
+            {
+                this.номерВерсField = value;
+                this.RaisePropertyChanged("НомерВерс");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime ДатаВерс
+        {
+            get
+            {
+                return this.датаВерсField;
+            }
+            set
+            {
+                this.датаВерсField = value;
+                this.RaisePropertyChanged("ДатаВерс");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class ОрганЗАГСТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string наимЗАГСField;
+
+        private string кодЗАГСField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаимЗАГС
+        {
+            get
+            {
+                return this.наимЗАГСField;
+            }
+            set
+            {
+                this.наимЗАГСField = value;
+                this.RaisePropertyChanged("НаимЗАГС");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string КодЗАГС
+        {
+            get
+            {
+                return this.кодЗАГСField;
+            }
+            set
+            {
+                this.кодЗАГСField = value;
+                this.RaisePropertyChanged("КодЗАГС");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class СведДокТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object itemField;
+
+        private ItemChoiceType itemElementNameField;
+
+        private string кодДокField;
+
+        private string наимДокField;
+
+        private string серНомДокField;
+
+        private System.DateTime датаДокField;
+
+        private bool датаДокFieldSpecified;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("НаимОрг", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ФИОИП", typeof(ФИОПрТип))]
+        [System.Xml.Serialization.XmlElementAttribute("ФИОФЛ", typeof(ФИОПрТип))]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
+        public object Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+                this.RaisePropertyChanged("Item");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public ItemChoiceType ItemElementName
+        {
+            get
+            {
+                return this.itemElementNameField;
+            }
+            set
+            {
+                this.itemElementNameField = value;
+                this.RaisePropertyChanged("ItemElementName");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string КодДок
+        {
+            get
+            {
+                return this.кодДокField;
+            }
+            set
+            {
+                this.кодДокField = value;
+                this.RaisePropertyChanged("КодДок");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаимДок
+        {
+            get
+            {
+                return this.наимДокField;
+            }
+            set
+            {
+                this.наимДокField = value;
+                this.RaisePropertyChanged("НаимДок");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string СерНомДок
+        {
+            get
+            {
+                return this.серНомДокField;
+            }
+            set
+            {
+                this.серНомДокField = value;
+                this.RaisePropertyChanged("СерНомДок");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime ДатаДок
+        {
+            get
+            {
+                return this.датаДокField;
+            }
+            set
+            {
+                this.датаДокField = value;
+                this.RaisePropertyChanged("ДатаДок");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ДатаДокSpecified
+        {
+            get
+            {
+                return this.датаДокFieldSpecified;
+            }
+            set
+            {
+                this.датаДокFieldSpecified = value;
+                this.RaisePropertyChanged("ДатаДокSpecified");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class ФИОПрТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object itemField;
+
+        private object item1Field;
+
+        private object item2Field;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ПрФамилия", typeof(ФИОПрТипПрФамилия))]
+        [System.Xml.Serialization.XmlElementAttribute("Фамилия", typeof(string))]
+        public object Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+                this.RaisePropertyChanged("Item");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Имя", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ПрИмя", typeof(ФИОПрТипПрИмя))]
+        public object Item1
+        {
+            get
+            {
+                return this.item1Field;
+            }
+            set
+            {
+                this.item1Field = value;
+                this.RaisePropertyChanged("Item1");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Отчество", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ПрОтчество", typeof(ФИОПрТипПрОтчество))]
+        public object Item2
+        {
+            get
+            {
+                return this.item2Field;
+            }
+            set
+            {
+                this.item2Field = value;
+                this.RaisePropertyChanged("Item2");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public enum ФИОПрТипПрФамилия
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public enum ФИОПрТипПрИмя
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public enum ФИОПрТипПрОтчество
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1", IncludeInSchema = false)]
+    public enum ItemChoiceType
+    {
+
+        /// <remarks/>
+        НаимОрг,
+
+        /// <remarks/>
+        ФИОИП,
+
+        /// <remarks/>
+        ФИОФЛ,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class ЗапАктТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private ОрганЗАГСТип органЗАГСField;
+
+        private string типАГСField;
+
+        private string наимТипЗаписField;
+
+        private string номерЗаписField;
+
+        private System.DateTime датаЗаписField;
+
+        /// <remarks/>
+        public ОрганЗАГСТип ОрганЗАГС
+        {
+            get
+            {
+                return this.органЗАГСField;
+            }
+            set
+            {
+                this.органЗАГСField = value;
+                this.RaisePropertyChanged("ОрганЗАГС");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ТипАГС
+        {
+            get
+            {
+                return this.типАГСField;
+            }
+            set
+            {
+                this.типАГСField = value;
+                this.RaisePropertyChanged("ТипАГС");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаимТипЗапис
+        {
+            get
+            {
+                return this.наимТипЗаписField;
+            }
+            set
+            {
+                this.наимТипЗаписField = value;
+                this.RaisePropertyChanged("НаимТипЗапис");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НомерЗапис
+        {
+            get
+            {
+                return this.номерЗаписField;
+            }
+            set
+            {
+                this.номерЗаписField = value;
+                this.RaisePropertyChanged("НомерЗапис");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime ДатаЗапис
+        {
+            get
+            {
+                return this.датаЗаписField;
+            }
+            set
+            {
+                this.датаЗаписField = value;
+                this.RaisePropertyChanged("ДатаЗапис");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class СведДокОснТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object itemField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ДокОсн", typeof(СведДокТип))]
+        [System.Xml.Serialization.XmlElementAttribute("ЗапАктОсн", typeof(ЗапАктТип))]
+        public object Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+                this.RaisePropertyChanged("Item");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class СведИзмАГСТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object itemField;
+
+        private string кодВидСведField;
+
+        private string наимВидСведField;
+
+        private System.DateTime датаВнесИспрField;
+
+        private string содержИспрField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ПрСведДокИспрАГС", typeof(СведИзмАГСТипПрСведДокИспрАГС))]
+        [System.Xml.Serialization.XmlElementAttribute("СведДокИспрАГС", typeof(СведДокОснТип))]
+        public object Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+                this.RaisePropertyChanged("Item");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string КодВидСвед
+        {
+            get
+            {
+                return this.кодВидСведField;
+            }
+            set
+            {
+                this.кодВидСведField = value;
+                this.RaisePropertyChanged("КодВидСвед");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаимВидСвед
+        {
+            get
+            {
+                return this.наимВидСведField;
+            }
+            set
+            {
+                this.наимВидСведField = value;
+                this.RaisePropertyChanged("НаимВидСвед");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime ДатаВнесИспр
+        {
+            get
+            {
+                return this.датаВнесИспрField;
+            }
+            set
+            {
+                this.датаВнесИспрField = value;
+                this.RaisePropertyChanged("ДатаВнесИспр");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string СодержИспр
+        {
+            get
+            {
+                return this.содержИспрField;
+            }
+            set
+            {
+                this.содержИспрField = value;
+                this.RaisePropertyChanged("СодержИспр");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public enum СведИзмАГСТипПрСведДокИспрАГС
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class УдЛичнФЛТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string кодВидДокField;
+
+        private string наимДокField;
+
+        private string серНомДокField;
+
+        private System.DateTime датаДокField;
+
+        private bool датаДокFieldSpecified;
+
+        private string выдДокField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string КодВидДок
+        {
+            get
+            {
+                return this.кодВидДокField;
+            }
+            set
+            {
+                this.кодВидДокField = value;
+                this.RaisePropertyChanged("КодВидДок");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаимДок
+        {
+            get
+            {
+                return this.наимДокField;
+            }
+            set
+            {
+                this.наимДокField = value;
+                this.RaisePropertyChanged("НаимДок");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string СерНомДок
+        {
+            get
+            {
+                return this.серНомДокField;
+            }
+            set
+            {
+                this.серНомДокField = value;
+                this.RaisePropertyChanged("СерНомДок");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime ДатаДок
+        {
+            get
+            {
+                return this.датаДокField;
+            }
+            set
+            {
+                this.датаДокField = value;
+                this.RaisePropertyChanged("ДатаДок");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ДатаДокSpecified
+        {
+            get
+            {
+                return this.датаДокFieldSpecified;
+            }
+            set
+            {
+                this.датаДокFieldSpecified = value;
+                this.RaisePropertyChanged("ДатаДокSpecified");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ВыдДок
+        {
+            get
+            {
+                return this.выдДокField;
+            }
+            set
+            {
+                this.выдДокField = value;
+                this.RaisePropertyChanged("ВыдДок");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class НомерТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string типField;
+
+        private string номерField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Тип
+        {
+            get
+            {
+                return this.типField;
+            }
+            set
+            {
+                this.типField = value;
+                this.RaisePropertyChanged("Тип");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Номер
+        {
+            get
+            {
+                return this.номерField;
+            }
+            set
+            {
+                this.номерField = value;
+                this.RaisePropertyChanged("Номер");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class ТипНаимТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string типField;
+
+        private string наимField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Тип
+        {
+            get
+            {
+                return this.типField;
+            }
+            set
+            {
+                this.типField = value;
+                this.RaisePropertyChanged("Тип");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Наим
+        {
+            get
+            {
+                return this.наимField;
+            }
+            set
+            {
+                this.наимField = value;
+                this.RaisePropertyChanged("Наим");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class ВидНаимТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string видField;
+
+        private string наимField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Вид
+        {
+            get
+            {
+                return this.видField;
+            }
+            set
+            {
+                this.видField = value;
+                this.RaisePropertyChanged("Вид");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Наим
+        {
+            get
+            {
+                return this.наимField;
+            }
+            set
+            {
+                this.наимField = value;
+                this.RaisePropertyChanged("Наим");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class ВидНаимКодТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string видКодField;
+
+        private string наимField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ВидКод
+        {
+            get
+            {
+                return this.видКодField;
+            }
+            set
+            {
+                this.видКодField = value;
+                this.RaisePropertyChanged("ВидКод");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Наим
+        {
+            get
+            {
+                return this.наимField;
+            }
+            set
+            {
+                this.наимField = value;
+                this.RaisePropertyChanged("Наим");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class АдрФИАСТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string регионField;
+
+        private ВидНаимКодТип муниципРайонField;
+
+        private ВидНаимКодТип городСелПоселенField;
+
+        private ВидНаимТип населенПунктField;
+
+        private ТипНаимТип элПланСтруктурField;
+
+        private ТипНаимТип элУлДорСетиField;
+
+        private string земелУчастокField;
+
+        private НомерТип[] зданиеField;
+
+        private НомерТип помещЗданияField;
+
+        private НомерТип помещКвартирыField;
+
+        private string идНомField;
+
+        private string индексField;
+
+        /// <remarks/>
+        public string Регион
+        {
+            get
+            {
+                return this.регионField;
+            }
+            set
+            {
+                this.регионField = value;
+                this.RaisePropertyChanged("Регион");
+            }
+        }
+
+        /// <remarks/>
+        public ВидНаимКодТип МуниципРайон
+        {
+            get
+            {
+                return this.муниципРайонField;
+            }
+            set
+            {
+                this.муниципРайонField = value;
+                this.RaisePropertyChanged("МуниципРайон");
+            }
+        }
+
+        /// <remarks/>
+        public ВидНаимКодТип ГородСелПоселен
+        {
+            get
+            {
+                return this.городСелПоселенField;
+            }
+            set
+            {
+                this.городСелПоселенField = value;
+                this.RaisePropertyChanged("ГородСелПоселен");
+            }
+        }
+
+        /// <remarks/>
+        public ВидНаимТип НаселенПункт
+        {
+            get
+            {
+                return this.населенПунктField;
+            }
+            set
+            {
+                this.населенПунктField = value;
+                this.RaisePropertyChanged("НаселенПункт");
+            }
+        }
+
+        /// <remarks/>
+        public ТипНаимТип ЭлПланСтруктур
+        {
+            get
+            {
+                return this.элПланСтруктурField;
+            }
+            set
+            {
+                this.элПланСтруктурField = value;
+                this.RaisePropertyChanged("ЭлПланСтруктур");
+            }
+        }
+
+        /// <remarks/>
+        public ТипНаимТип ЭлУлДорСети
+        {
+            get
+            {
+                return this.элУлДорСетиField;
+            }
+            set
+            {
+                this.элУлДорСетиField = value;
+                this.RaisePropertyChanged("ЭлУлДорСети");
+            }
+        }
+
+        /// <remarks/>
+        public string ЗемелУчасток
+        {
+            get
+            {
+                return this.земелУчастокField;
+            }
+            set
+            {
+                this.земелУчастокField = value;
+                this.RaisePropertyChanged("ЗемелУчасток");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Здание")]
+        public НомерТип[] Здание
+        {
+            get
+            {
+                return this.зданиеField;
+            }
+            set
+            {
+                this.зданиеField = value;
+                this.RaisePropertyChanged("Здание");
+            }
+        }
+
+        /// <remarks/>
+        public НомерТип ПомещЗдания
+        {
+            get
+            {
+                return this.помещЗданияField;
+            }
+            set
+            {
+                this.помещЗданияField = value;
+                this.RaisePropertyChanged("ПомещЗдания");
+            }
+        }
+
+        /// <remarks/>
+        public НомерТип ПомещКвартиры
+        {
+            get
+            {
+                return this.помещКвартирыField;
+            }
+            set
+            {
+                this.помещКвартирыField = value;
+                this.RaisePropertyChanged("ПомещКвартиры");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ИдНом
+        {
+            get
+            {
+                return this.идНомField;
+            }
+            set
+            {
+                this.идНомField = value;
+                this.RaisePropertyChanged("ИдНом");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Индекс
+        {
+            get
+            {
+                return this.индексField;
+            }
+            set
+            {
+                this.индексField = value;
+                this.RaisePropertyChanged("Индекс");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class АдрКЛАДРТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string индексField;
+
+        private string кодРегионField;
+
+        private string наимРегионField;
+
+        private string районField;
+
+        private string городField;
+
+        private string населПунктField;
+
+        private string улицаField;
+
+        private string домField;
+
+        private string корпусField;
+
+        private string квартField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Индекс
+        {
+            get
+            {
+                return this.индексField;
+            }
+            set
+            {
+                this.индексField = value;
+                this.RaisePropertyChanged("Индекс");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string КодРегион
+        {
+            get
+            {
+                return this.кодРегионField;
+            }
+            set
+            {
+                this.кодРегионField = value;
+                this.RaisePropertyChanged("КодРегион");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаимРегион
+        {
+            get
+            {
+                return this.наимРегионField;
+            }
+            set
+            {
+                this.наимРегионField = value;
+                this.RaisePropertyChanged("НаимРегион");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Район
+        {
+            get
+            {
+                return this.районField;
+            }
+            set
+            {
+                this.районField = value;
+                this.RaisePropertyChanged("Район");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Город
+        {
+            get
+            {
+                return this.городField;
+            }
+            set
+            {
+                this.городField = value;
+                this.RaisePropertyChanged("Город");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаселПункт
+        {
+            get
+            {
+                return this.населПунктField;
+            }
+            set
+            {
+                this.населПунктField = value;
+                this.RaisePropertyChanged("НаселПункт");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Улица
+        {
+            get
+            {
+                return this.улицаField;
+            }
+            set
+            {
+                this.улицаField = value;
+                this.RaisePropertyChanged("Улица");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Дом
+        {
+            get
+            {
+                return this.домField;
+            }
+            set
+            {
+                this.домField = value;
+                this.RaisePropertyChanged("Дом");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Корпус
+        {
+            get
+            {
+                return this.корпусField;
+            }
+            set
+            {
+                this.корпусField = value;
+                this.RaisePropertyChanged("Корпус");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Кварт
+        {
+            get
+            {
+                return this.квартField;
+            }
+            set
+            {
+                this.квартField = value;
+                this.RaisePropertyChanged("Кварт");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class МЖПослТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object itemField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("МЖПослИн", typeof(МЖПослТипМЖПослИн))]
+        [System.Xml.Serialization.XmlElementAttribute("МЖПослРФ", typeof(МЖПослТипМЖПослРФ))]
+        public object Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+                this.RaisePropertyChanged("Item");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class МЖПослТипМЖПослИн : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string оКСМField;
+
+        private string наимСтраныField;
+
+        private string адрТекстField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ОКСМ
+        {
+            get
+            {
+                return this.оКСМField;
+            }
+            set
+            {
+                this.оКСМField = value;
+                this.RaisePropertyChanged("ОКСМ");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаимСтраны
+        {
+            get
+            {
+                return this.наимСтраныField;
+            }
+            set
+            {
+                this.наимСтраныField = value;
+                this.RaisePropertyChanged("НаимСтраны");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string АдрТекст
+        {
+            get
+            {
+                return this.адрТекстField;
+            }
+            set
+            {
+                this.адрТекстField = value;
+                this.RaisePropertyChanged("АдрТекст");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class МЖПослТипМЖПослРФ : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object itemField;
+
+        private string адрРФТекстField;
+
+        private МЖПослТипМЖПослРФПрТипАдрРФ прТипАдрРФField;
+
+        private string оКТМОField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("АдрКЛАДР", typeof(АдрКЛАДРТип))]
+        [System.Xml.Serialization.XmlElementAttribute("АдрФИАС", typeof(АдрФИАСТип))]
+        public object Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+                this.RaisePropertyChanged("Item");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string АдрРФТекст
+        {
+            get
+            {
+                return this.адрРФТекстField;
+            }
+            set
+            {
+                this.адрРФТекстField = value;
+                this.RaisePropertyChanged("АдрРФТекст");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public МЖПослТипМЖПослРФПрТипАдрРФ ПрТипАдрРФ
+        {
+            get
+            {
+                return this.прТипАдрРФField;
+            }
+            set
+            {
+                this.прТипАдрРФField = value;
+                this.RaisePropertyChanged("ПрТипАдрРФ");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ОКТМО
+        {
+            get
+            {
+                return this.оКТМОField;
+            }
+            set
+            {
+                this.оКТМОField = value;
+                this.RaisePropertyChanged("ОКТМО");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public enum МЖПослТипМЖПослРФПрТипАдрРФ
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("2")]
+        Item2,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class МестоТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private МестоТипПризнМесто признМестоField;
+
+        private string местоТекстField;
+
+        private string кодСтраныField;
+
+        private string наимСтраныField;
+
+        private string регионField;
+
+        private string наимСубъектField;
+
+        private string районField;
+
+        private string городField;
+
+        private string населПунктField;
+
+        private string оКТМОField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public МестоТипПризнМесто ПризнМесто
+        {
+            get
+            {
+                return this.признМестоField;
+            }
+            set
+            {
+                this.признМестоField = value;
+                this.RaisePropertyChanged("ПризнМесто");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string МестоТекст
+        {
+            get
+            {
+                return this.местоТекстField;
+            }
+            set
+            {
+                this.местоТекстField = value;
+                this.RaisePropertyChanged("МестоТекст");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string КодСтраны
+        {
+            get
+            {
+                return this.кодСтраныField;
+            }
+            set
+            {
+                this.кодСтраныField = value;
+                this.RaisePropertyChanged("КодСтраны");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаимСтраны
+        {
+            get
+            {
+                return this.наимСтраныField;
+            }
+            set
+            {
+                this.наимСтраныField = value;
+                this.RaisePropertyChanged("НаимСтраны");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Регион
+        {
+            get
+            {
+                return this.регионField;
+            }
+            set
+            {
+                this.регионField = value;
+                this.RaisePropertyChanged("Регион");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаимСубъект
+        {
+            get
+            {
+                return this.наимСубъектField;
+            }
+            set
+            {
+                this.наимСубъектField = value;
+                this.RaisePropertyChanged("НаимСубъект");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Район
+        {
+            get
+            {
+                return this.районField;
+            }
+            set
+            {
+                this.районField = value;
+                this.RaisePropertyChanged("Район");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Город
+        {
+            get
+            {
+                return this.городField;
+            }
+            set
+            {
+                this.городField = value;
+                this.RaisePropertyChanged("Город");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаселПункт
+        {
+            get
+            {
+                return this.населПунктField;
+            }
+            set
+            {
+                this.населПунктField = value;
+                this.RaisePropertyChanged("НаселПункт");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ОКТМО
+        {
+            get
+            {
+                return this.оКТМОField;
+            }
+            set
+            {
+                this.оКТМОField = value;
+                this.RaisePropertyChanged("ОКТМО");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public enum МестоТипПризнМесто
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("2")]
+        Item2,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class ДатаДокТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object itemField;
+
+        private object item1Field;
+
+        private string годField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("День", typeof(string), DataType = "integer")]
+        [System.Xml.Serialization.XmlElementAttribute("ПрДень", typeof(ДатаДокТипПрДень))]
+        public object Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+                this.RaisePropertyChanged("Item");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Месяц", typeof(string), DataType = "integer")]
+        [System.Xml.Serialization.XmlElementAttribute("ПрМесяц", typeof(ДатаДокТипПрМесяц))]
+        public object Item1
+        {
+            get
+            {
+                return this.item1Field;
+            }
+            set
+            {
+                this.item1Field = value;
+                this.RaisePropertyChanged("Item1");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "gYear")]
+        public string Год
+        {
+            get
+            {
+                return this.годField;
+            }
+            set
+            {
+                this.годField = value;
+                this.RaisePropertyChanged("Год");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public enum ДатаДокТипПрДень
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public enum ДатаДокТипПрМесяц
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class ГражданствоТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string оКСМField;
+
+        private string наимСтраныField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ОКСМ
+        {
+            get
+            {
+                return this.оКСМField;
+            }
+            set
+            {
+                this.оКСМField = value;
+                this.RaisePropertyChanged("ОКСМ");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаимСтраны
+        {
+            get
+            {
+                return this.наимСтраныField;
+            }
+            set
+            {
+                this.наимСтраныField = value;
+                this.RaisePropertyChanged("НаимСтраны");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/types/4.0.1")]
+    public partial class СведСвидетТип : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string серияСвидетField;
+
+        private string номерСвидетField;
+
+        private System.DateTime датаВыдСвидетField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string СерияСвидет
+        {
+            get
+            {
+                return this.серияСвидетField;
+            }
+            set
+            {
+                this.серияСвидетField = value;
+                this.RaisePropertyChanged("СерияСвидет");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НомерСвидет
+        {
+            get
+            {
+                return this.номерСвидетField;
+            }
+            set
+            {
+                this.номерСвидетField = value;
+                this.RaisePropertyChanged("НомерСвидет");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime ДатаВыдСвидет
+        {
+            get
+            {
+                return this.датаВыдСвидетField;
+            }
+            set
+            {
+                this.датаВыдСвидетField = value;
+                this.RaisePropertyChanged("ДатаВыдСвидет");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public partial class FATALZPRequestСведРегСмертСтатусЗаписи : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private System.DateTime датаНачСтатусField;
+
+        private FATALZPRequestСведРегСмертСтатусЗаписиКодСтатус кодСтатусField;
+
+        private string наимСтатусField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "date")]
+        public System.DateTime ДатаНачСтатус
+        {
+            get
+            {
+                return this.датаНачСтатусField;
+            }
+            set
+            {
+                this.датаНачСтатусField = value;
+                this.RaisePropertyChanged("ДатаНачСтатус");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public FATALZPRequestСведРегСмертСтатусЗаписиКодСтатус КодСтатус
+        {
+            get
+            {
+                return this.кодСтатусField;
+            }
+            set
+            {
+                this.кодСтатусField = value;
+                this.RaisePropertyChanged("КодСтатус");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string НаимСтатус
+        {
+            get
+            {
+                return this.наимСтатусField;
+            }
+            set
+            {
+                this.наимСтатусField = value;
+                this.RaisePropertyChanged("НаимСтатус");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPRequestСведРегСмертСтатусЗаписиКодСтатус
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("01")]
+        Item01,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("02")]
+        Item02,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("03")]
+        Item03,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("07")]
+        Item07,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public partial class FATALZPRequestСведРегСмертПрдСведРег : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private FATALZPRequestСведРегСмертПрдСведРегСведУмер сведУмерField;
+
+        /// <remarks/>
+        public FATALZPRequestСведРегСмертПрдСведРегСведУмер СведУмер
+        {
+            get
+            {
+                return this.сведУмерField;
+            }
+            set
+            {
+                this.сведУмерField = value;
+                this.RaisePropertyChanged("СведУмер");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public partial class FATALZPRequestСведРегСмертПрдСведРегСведУмер : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object itemField;
+
+        private ФИОПрТип фИОУмерField;
+
+        private object item1Field;
+
+        private object item2Field;
+
+        private object item3Field;
+
+        private object item4Field;
+
+        private object item5Field;
+
+        private object item6Field;
+
+        private object item7Field;
+
+        private FATALZPRequestСведРегСмертПрдСведРегСведУмерПрНеустанЛицо прНеустанЛицоField;
+
+        private bool прНеустанЛицоFieldSpecified;
+
+        private FATALZPRequestСведРегСмертПрдСведРегСведУмерПол полField;
+
+        private bool полFieldSpecified;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Гражданство", typeof(ГражданствоТип))]
+        [System.Xml.Serialization.XmlElementAttribute("ПрГражданство", typeof(FATALZPRequestСведРегСмертПрдСведРегСведУмерПрГражданство))]
+        public object Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+                this.RaisePropertyChanged("Item");
+            }
+        }
+
+        /// <remarks/>
+        public ФИОПрТип ФИОУмер
+        {
+            get
+            {
+                return this.фИОУмерField;
+            }
+            set
+            {
+                this.фИОУмерField = value;
+                this.RaisePropertyChanged("ФИОУмер");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ДатаРождДок", typeof(ДатаДокТип))]
+        [System.Xml.Serialization.XmlElementAttribute("ДатаРождКаленд", typeof(System.DateTime), DataType = "date")]
+        [System.Xml.Serialization.XmlElementAttribute("ПрДатаРожд", typeof(FATALZPRequestСведРегСмертПрдСведРегСведУмерПрДатаРожд))]
+        public object Item1
+        {
+            get
+            {
+                return this.item1Field;
+            }
+            set
+            {
+                this.item1Field = value;
+                this.RaisePropertyChanged("Item1");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("МестоРожден", typeof(МестоТип))]
+        [System.Xml.Serialization.XmlElementAttribute("ПрМестоРожден", typeof(FATALZPRequestСведРегСмертПрдСведРегСведУмерПрМестоРожден))]
+        public object Item2
+        {
+            get
+            {
+                return this.item2Field;
+            }
+            set
+            {
+                this.item2Field = value;
+                this.RaisePropertyChanged("Item2");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("МЖПосл", typeof(МЖПослТип))]
+        [System.Xml.Serialization.XmlElementAttribute("ПрМЖПосл", typeof(FATALZPRequestСведРегСмертПрдСведРегСведУмерПрМЖПосл))]
+        public object Item3
+        {
+            get
+            {
+                return this.item3Field;
+            }
+            set
+            {
+                this.item3Field = value;
+                this.RaisePropertyChanged("Item3");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ПрУдЛичнФЛ", typeof(FATALZPRequestСведРегСмертПрдСведРегСведУмерПрУдЛичнФЛ))]
+        [System.Xml.Serialization.XmlElementAttribute("УдЛичнФЛ", typeof(УдЛичнФЛТип))]
+        public object Item4
+        {
+            get
+            {
+                return this.item4Field;
+            }
+            set
+            {
+                this.item4Field = value;
+                this.RaisePropertyChanged("Item4");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ДатаСмертДок", typeof(ДатаДокТип))]
+        [System.Xml.Serialization.XmlElementAttribute("ДатаСмертКаленд", typeof(System.DateTime), DataType = "date")]
+        [System.Xml.Serialization.XmlElementAttribute("ПрДатаСмерт", typeof(FATALZPRequestСведРегСмертПрдСведРегСведУмерПрДатаСмерт))]
+        public object Item5
+        {
+            get
+            {
+                return this.item5Field;
+            }
+            set
+            {
+                this.item5Field = value;
+                this.RaisePropertyChanged("Item5");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ВремяСмерт", typeof(System.DateTime), DataType = "time")]
+        [System.Xml.Serialization.XmlElementAttribute("ПрВремяСмерт", typeof(FATALZPRequestСведРегСмертПрдСведРегСведУмерПрВремяСмерт))]
+        public object Item6
+        {
+            get
+            {
+                return this.item6Field;
+            }
+            set
+            {
+                this.item6Field = value;
+                this.RaisePropertyChanged("Item6");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("МестоСмерт", typeof(МестоТип))]
+        [System.Xml.Serialization.XmlElementAttribute("ПрМестоСмерт", typeof(FATALZPRequestСведРегСмертПрдСведРегСведУмерПрМестоСмерт))]
+        public object Item7
+        {
+            get
+            {
+                return this.item7Field;
+            }
+            set
+            {
+                this.item7Field = value;
+                this.RaisePropertyChanged("Item7");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public FATALZPRequestСведРегСмертПрдСведРегСведУмерПрНеустанЛицо ПрНеустанЛицо
+        {
+            get
+            {
+                return this.прНеустанЛицоField;
+            }
+            set
+            {
+                this.прНеустанЛицоField = value;
+                this.RaisePropertyChanged("ПрНеустанЛицо");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ПрНеустанЛицоSpecified
+        {
+            get
+            {
+                return this.прНеустанЛицоFieldSpecified;
+            }
+            set
+            {
+                this.прНеустанЛицоFieldSpecified = value;
+                this.RaisePropertyChanged("ПрНеустанЛицоSpecified");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public FATALZPRequestСведРегСмертПрдСведРегСведУмерПол Пол
+        {
+            get
+            {
+                return this.полField;
+            }
+            set
+            {
+                this.полField = value;
+                this.RaisePropertyChanged("Пол");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ПолSpecified
+        {
+            get
+            {
+                return this.полFieldSpecified;
+            }
+            set
+            {
+                this.полFieldSpecified = value;
+                this.RaisePropertyChanged("ПолSpecified");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPRequestСведРегСмертПрдСведРегСведУмерПрГражданство
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPRequestСведРегСмертПрдСведРегСведУмерПрДатаРожд
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPRequestСведРегСмертПрдСведРегСведУмерПрМестоРожден
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPRequestСведРегСмертПрдСведРегСведУмерПрМЖПосл
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPRequestСведРегСмертПрдСведРегСведУмерПрУдЛичнФЛ
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPRequestСведРегСмертПрдСведРегСведУмерПрДатаСмерт
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPRequestСведРегСмертПрдСведРегСведУмерПрВремяСмерт
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPRequestСведРегСмертПрдСведРегСведУмерПрМестоСмерт
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPRequestСведРегСмертПрдСведРегСведУмерПрНеустанЛицо
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPRequestСведРегСмертПрдСведРегСведУмерПол
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("2")]
+        Item2,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("3")]
+        Item3,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1", IsNullable = false)]
+    public partial class FATALZPResponse : object, System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private string идСведField;
+
+        private FATALZPResponseКодОбр кодОбрField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ИдСвед
+        {
+            get
+            {
+                return this.идСведField;
+            }
+            set
+            {
+                this.идСведField = value;
+                this.RaisePropertyChanged("ИдСвед");
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public FATALZPResponseКодОбр КодОбр
+        {
+            get
+            {
+                return this.кодОбрField;
+            }
+            set
+            {
+                this.кодОбрField = value;
+                this.RaisePropertyChanged("КодОбр");
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected void RaisePropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null))
+            {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "urn://x-artefacts-zags-fatalzp/root/112-25/4.0.1")]
+    public enum FATALZPResponseКодОбр
+    {
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+    }
+
+}
 public class VS01287v001_TABL00
 /* Сведения и ЕГР ЗАГС о государственной регистрации рождения 
  * VS01287v001_TABL00
@@ -9768,6 +12634,1170 @@ public class VS00648v001_PFR001
         TemporaryIdentityCardRF,
     }
 }
+
+/// <summary>
+/// Выписка сведений об инвалиде
+/// https://smev3.gosuslugi.ru/portal/inquirytype_one.jsp?id=41140&zone=fed&page=1&dTest=false
+/// Версия 1.0.3
+/// Тип запроса - Запрос
+/// Namespace URI - http://kvs.fri.com/extraction-invalid-data/1.0.3
+/// Версия МР - 3.0
+/// </summary>
+public class VS00291v004_PFRF01
+{
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://kvs.fri.com/extraction-invalid-data/1.0.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://kvs.fri.com/extraction-invalid-data/1.0.3", IsNullable = false)]
+    public partial class ExtractionInvalidDataRequest
+    {
+
+        private string sNILSField;
+
+        private ExtractionInvalidDataRequestTypeOfExtraction typeOfExtractionField;
+
+        private ExtractionPeriodType extractionPeriodField;
+
+        /// <remarks/>
+        public string SNILS
+        {
+            get
+            {
+                return this.sNILSField;
+            }
+            set
+            {
+                this.sNILSField = value;
+            }
+        }
+
+        /// <remarks/>
+        public ExtractionInvalidDataRequestTypeOfExtraction TypeOfExtraction
+        {
+            get
+            {
+                return this.typeOfExtractionField;
+            }
+            set
+            {
+                this.typeOfExtractionField = value;
+            }
+        }
+
+        /// <remarks/>
+        public ExtractionPeriodType ExtractionPeriod
+        {
+            get
+            {
+                return this.extractionPeriodField;
+            }
+            set
+            {
+                this.extractionPeriodField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://kvs.fri.com/extraction-invalid-data/1.0.3")]
+    public enum ExtractionInvalidDataRequestTypeOfExtraction
+    {
+
+        /// <remarks/>
+        Stable,
+
+        /// <remarks/>
+        Flexible,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://kvs.fri.com/extraction-invalid-data/1.0.3")]
+    public partial class ExtractionPeriodType
+    {
+
+        private System.DateTime documentsValidOnDateField;
+
+        private bool documentsValidOnDateFieldSpecified;
+
+        private PeriodType documentsOnPeriodField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime DocumentsValidOnDate
+        {
+            get
+            {
+                return this.documentsValidOnDateField;
+            }
+            set
+            {
+                this.documentsValidOnDateField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DocumentsValidOnDateSpecified
+        {
+            get
+            {
+                return this.documentsValidOnDateFieldSpecified;
+            }
+            set
+            {
+                this.documentsValidOnDateFieldSpecified = value;
+            }
+        }
+
+        /// <remarks/>
+        public PeriodType DocumentsOnPeriod
+        {
+            get
+            {
+                return this.documentsOnPeriodField;
+            }
+            set
+            {
+                this.documentsOnPeriodField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://kvs.fri.com/extraction-invalid-data/1.0.3")]
+    public partial class PeriodType
+    {
+
+        private System.DateTime dateFromField;
+
+        private System.DateTime dateToField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime DateFrom
+        {
+            get
+            {
+                return this.dateFromField;
+            }
+            set
+            {
+                this.dateFromField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime DateTo
+        {
+            get
+            {
+                return this.dateToField;
+            }
+            set
+            {
+                this.dateToField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://kvs.fri.com/extraction-invalid-data/attachments/1.0.0")]
+    public partial class _StructuredAttachmentFormatType1
+    {
+
+        private bool isUnstructuredFormatField;
+
+        private bool isZippedPacketField;
+
+        private string documentTypeField;
+
+        private string familyNameField;
+
+        private string firstNameField;
+
+        private string patronymicField;
+
+        private string snilsField;
+
+        /// <remarks/>
+        public bool IsUnstructuredFormat
+        {
+            get
+            {
+                return this.isUnstructuredFormatField;
+            }
+            set
+            {
+                this.isUnstructuredFormatField = value;
+            }
+        }
+
+        /// <remarks/>
+        public bool IsZippedPacket
+        {
+            get
+            {
+                return this.isZippedPacketField;
+            }
+            set
+            {
+                this.isZippedPacketField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string DocumentType
+        {
+            get
+            {
+                return this.documentTypeField;
+            }
+            set
+            {
+                this.documentTypeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+        public string FamilyName
+        {
+            get
+            {
+                return this.familyNameField;
+            }
+            set
+            {
+                this.familyNameField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+        public string FirstName
+        {
+            get
+            {
+                return this.firstNameField;
+            }
+            set
+            {
+                this.firstNameField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+        public string Patronymic
+        {
+            get
+            {
+                return this.patronymicField;
+            }
+            set
+            {
+                this.patronymicField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Snils
+        {
+            get
+            {
+                return this.snilsField;
+            }
+            set
+            {
+                this.snilsField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://kvs.fri.com/extraction-invalid-data/attachments/1.0.0")]
+    public partial class _AttachmentDescriptionType
+    {
+
+        private object itemField;
+
+        private _StructuredAttachmentFormatType1 attachmentFormat1Field;
+
+        private string attachmentSignatureFSLinkField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("AttachmentFSLink", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("IsMTOMAttachmentContent", typeof(bool))]
+        public object Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+            }
+        }
+
+        /// <remarks/>
+        public _StructuredAttachmentFormatType1 AttachmentFormat1
+        {
+            get
+            {
+                return this.attachmentFormat1Field;
+            }
+            set
+            {
+                this.attachmentFormat1Field = value;
+            }
+        }
+
+        /// <remarks/>
+        public string AttachmentSignatureFSLink
+        {
+            get
+            {
+                return this.attachmentSignatureFSLinkField;
+            }
+            set
+            {
+                this.attachmentSignatureFSLinkField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://kvs.fri.com/extraction-invalid-data/1.0.3")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://kvs.fri.com/extraction-invalid-data/1.0.3", IsNullable = false)]
+    public partial class ExtractionInvalidDataResponse
+    {
+
+        private _AttachmentDescriptionType attachmentsBlockField;
+
+        /// <remarks/>
+        public _AttachmentDescriptionType AttachmentsBlock
+        {
+            get
+            {
+                return this.attachmentsBlockField;
+            }
+            set
+            {
+                this.attachmentsBlockField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+    [System.Xml.Serialization.XmlRootAttribute("AttachmentRef", Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1", IsNullable = false)]
+    public partial class AttachmentRefType
+    {
+
+        private string attachmentIdField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string attachmentId
+        {
+            get
+            {
+                return this.attachmentIdField;
+            }
+            set
+            {
+                this.attachmentIdField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+    [System.Xml.Serialization.XmlRootAttribute("PrimaryIdentityDocument", Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1", IsNullable = false)]
+    public partial class PrimaryIdentityDocumentType
+    {
+
+        private object itemField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ForeignPassport", typeof(NotRestrictedDocumentType))]
+        [System.Xml.Serialization.XmlElementAttribute("PassportRF", typeof(PassportRFType))]
+        [System.Xml.Serialization.XmlElementAttribute("ResidencePermitRF", typeof(InternationalPassportRFType))]
+        public object Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+    [System.Xml.Serialization.XmlRootAttribute("ForeignPassport", Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1", IsNullable = false)]
+    public partial class NotRestrictedDocumentType
+    {
+
+        private string seriesField;
+
+        private string numberField;
+
+        private System.DateTime issueDateField;
+
+        private string issuerField;
+
+        /// <remarks/>
+        public string Series
+        {
+            get
+            {
+                return this.seriesField;
+            }
+            set
+            {
+                this.seriesField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Number
+        {
+            get
+            {
+                return this.numberField;
+            }
+            set
+            {
+                this.numberField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime IssueDate
+        {
+            get
+            {
+                return this.issueDateField;
+            }
+            set
+            {
+                this.issueDateField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Issuer
+        {
+            get
+            {
+                return this.issuerField;
+            }
+            set
+            {
+                this.issuerField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+    [System.Xml.Serialization.XmlRootAttribute("PassportRF", Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1", IsNullable = false)]
+    public partial class PassportRFType
+    {
+
+        private string seriesField;
+
+        private string numberField;
+
+        private System.DateTime issueDateField;
+
+        private string issuerField;
+
+        /// <remarks/>
+        public string Series
+        {
+            get
+            {
+                return this.seriesField;
+            }
+            set
+            {
+                this.seriesField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Number
+        {
+            get
+            {
+                return this.numberField;
+            }
+            set
+            {
+                this.numberField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime IssueDate
+        {
+            get
+            {
+                return this.issueDateField;
+            }
+            set
+            {
+                this.issueDateField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Issuer
+        {
+            get
+            {
+                return this.issuerField;
+            }
+            set
+            {
+                this.issuerField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+    [System.Xml.Serialization.XmlRootAttribute("ResidencePermitRF", Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1", IsNullable = false)]
+    public partial class InternationalPassportRFType
+    {
+
+        private string seriesField;
+
+        private string numberField;
+
+        private System.DateTime issueDateField;
+
+        private string issuerField;
+
+        /// <remarks/>
+        public string Series
+        {
+            get
+            {
+                return this.seriesField;
+            }
+            set
+            {
+                this.seriesField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Number
+        {
+            get
+            {
+                return this.numberField;
+            }
+            set
+            {
+                this.numberField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime IssueDate
+        {
+            get
+            {
+                return this.issueDateField;
+            }
+            set
+            {
+                this.issueDateField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Issuer
+        {
+            get
+            {
+                return this.issuerField;
+            }
+            set
+            {
+                this.issuerField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+    [System.Xml.Serialization.XmlRootAttribute("IdentityDocument", Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1", IsNullable = false)]
+    public partial class AnyIdentityDocumentType
+    {
+
+        private object itemField;
+
+        private ItemChoiceType itemElementNameField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("BirthCertificate", typeof(SovietPassportType))]
+        [System.Xml.Serialization.XmlElementAttribute("DrivingLicenseRF", typeof(DrivingLicenseRFType))]
+        [System.Xml.Serialization.XmlElementAttribute("ForeignPassport", typeof(NotRestrictedDocumentType))]
+        [System.Xml.Serialization.XmlElementAttribute("Form9Certificate", typeof(NotRestrictedDocumentType))]
+        [System.Xml.Serialization.XmlElementAttribute("InternationalPassportRF", typeof(InternationalPassportRFType))]
+        [System.Xml.Serialization.XmlElementAttribute("MilitaryPassport", typeof(MilitaryPassportDocumentType))]
+        [System.Xml.Serialization.XmlElementAttribute("PassportLossCertificate", typeof(NotRestrictedDocumentType))]
+        [System.Xml.Serialization.XmlElementAttribute("PassportRF", typeof(PassportRFType))]
+        [System.Xml.Serialization.XmlElementAttribute("ReleaseCertificate", typeof(NotRestrictedDocumentType))]
+        [System.Xml.Serialization.XmlElementAttribute("ResidencePermitRF", typeof(InternationalPassportRFType))]
+        [System.Xml.Serialization.XmlElementAttribute("SailorPassport", typeof(MilitaryPassportDocumentType))]
+        [System.Xml.Serialization.XmlElementAttribute("SovietPassport", typeof(SovietPassportType))]
+        [System.Xml.Serialization.XmlElementAttribute("TemporaryIdentityCardRF", typeof(NotRestrictedDocumentType))]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
+        public object Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public ItemChoiceType ItemElementName
+        {
+            get
+            {
+                return this.itemElementNameField;
+            }
+            set
+            {
+                this.itemElementNameField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+    [System.Xml.Serialization.XmlRootAttribute("SovietPassport", Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1", IsNullable = false)]
+    public partial class SovietPassportType
+    {
+
+        private string seriesField;
+
+        private string numberField;
+
+        private System.DateTime issueDateField;
+
+        private string issuerField;
+
+        /// <remarks/>
+        public string Series
+        {
+            get
+            {
+                return this.seriesField;
+            }
+            set
+            {
+                this.seriesField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Number
+        {
+            get
+            {
+                return this.numberField;
+            }
+            set
+            {
+                this.numberField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime IssueDate
+        {
+            get
+            {
+                return this.issueDateField;
+            }
+            set
+            {
+                this.issueDateField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Issuer
+        {
+            get
+            {
+                return this.issuerField;
+            }
+            set
+            {
+                this.issuerField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+    [System.Xml.Serialization.XmlRootAttribute("DrivingLicenseRF", Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1", IsNullable = false)]
+    public partial class DrivingLicenseRFType
+    {
+
+        private string seriesField;
+
+        private string numberField;
+
+        private System.DateTime issueDateField;
+
+        private string issuerField;
+
+        /// <remarks/>
+        public string Series
+        {
+            get
+            {
+                return this.seriesField;
+            }
+            set
+            {
+                this.seriesField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Number
+        {
+            get
+            {
+                return this.numberField;
+            }
+            set
+            {
+                this.numberField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime IssueDate
+        {
+            get
+            {
+                return this.issueDateField;
+            }
+            set
+            {
+                this.issueDateField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Issuer
+        {
+            get
+            {
+                return this.issuerField;
+            }
+            set
+            {
+                this.issuerField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1")]
+    [System.Xml.Serialization.XmlRootAttribute("MilitaryPassport", Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1", IsNullable = false)]
+    public partial class MilitaryPassportDocumentType
+    {
+
+        private string seriesField;
+
+        private string numberField;
+
+        private System.DateTime issueDateField;
+
+        private string issuerField;
+
+        /// <remarks/>
+        public string Series
+        {
+            get
+            {
+                return this.seriesField;
+            }
+            set
+            {
+                this.seriesField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Number
+        {
+            get
+            {
+                return this.numberField;
+            }
+            set
+            {
+                this.numberField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
+        public System.DateTime IssueDate
+        {
+            get
+            {
+                return this.issueDateField;
+            }
+            set
+            {
+                this.issueDateField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Issuer
+        {
+            get
+            {
+                return this.issuerField;
+            }
+            set
+            {
+                this.issuerField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1", IncludeInSchema = false)]
+    public enum ItemChoiceType
+    {
+
+        /// <remarks/>
+        BirthCertificate,
+
+        /// <remarks/>
+        DrivingLicenseRF,
+
+        /// <remarks/>
+        ForeignPassport,
+
+        /// <remarks/>
+        Form9Certificate,
+
+        /// <remarks/>
+        InternationalPassportRF,
+
+        /// <remarks/>
+        MilitaryPassport,
+
+        /// <remarks/>
+        PassportLossCertificate,
+
+        /// <remarks/>
+        PassportRF,
+
+        /// <remarks/>
+        ReleaseCertificate,
+
+        /// <remarks/>
+        ResidencePermitRF,
+
+        /// <remarks/>
+        SailorPassport,
+
+        /// <remarks/>
+        SovietPassport,
+
+        /// <remarks/>
+        TemporaryIdentityCardRF,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://kvs.fri.com/extraction-invalid-data/attachments/1.0.0")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://kvs.fri.com/extraction-invalid-data/attachments/1.0.0", IsNullable = false)]
+    public partial class RegistryExampleRequest
+    {
+
+        private _RegistryBlockType registryBlockField;
+
+        private _AttachmentsBlockType attachmentsBlockField;
+
+        /// <remarks/>
+        public _RegistryBlockType RegistryBlock
+        {
+            get
+            {
+                return this.registryBlockField;
+            }
+            set
+            {
+                this.registryBlockField = value;
+            }
+        }
+
+        /// <remarks/>
+        public _AttachmentsBlockType AttachmentsBlock
+        {
+            get
+            {
+                return this.attachmentsBlockField;
+            }
+            set
+            {
+                this.attachmentsBlockField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://kvs.fri.com/extraction-invalid-data/attachments/1.0.0")]
+    public partial class _RegistryBlockType
+    {
+
+        private _RegistryRecordType registryRecordField;
+
+        /// <remarks/>
+        public _RegistryRecordType RegistryRecord
+        {
+            get
+            {
+                return this.registryRecordField;
+            }
+            set
+            {
+                this.registryRecordField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://kvs.fri.com/extraction-invalid-data/attachments/1.0.0")]
+    public partial class _RegistryRecordType
+    {
+
+        private string registryRecordIDField;
+
+        private _AttachmentsBlockType attachmentsBlockField;
+
+        private string documentNumberField;
+
+        private System.DateTime documentDateField;
+
+        private string documentOriginatorField;
+
+        private int documentAttachmentsAmountField;
+
+        /// <remarks/>
+        public string RegistryRecordID
+        {
+            get
+            {
+                return this.registryRecordIDField;
+            }
+            set
+            {
+                this.registryRecordIDField = value;
+            }
+        }
+
+        /// <remarks/>
+        public _AttachmentsBlockType AttachmentsBlock
+        {
+            get
+            {
+                return this.attachmentsBlockField;
+            }
+            set
+            {
+                this.attachmentsBlockField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string DocumentNumber
+        {
+            get
+            {
+                return this.documentNumberField;
+            }
+            set
+            {
+                this.documentNumberField = value;
+            }
+        }
+
+        /// <remarks/>
+        public System.DateTime DocumentDate
+        {
+            get
+            {
+                return this.documentDateField;
+            }
+            set
+            {
+                this.documentDateField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string DocumentOriginator
+        {
+            get
+            {
+                return this.documentOriginatorField;
+            }
+            set
+            {
+                this.documentOriginatorField = value;
+            }
+        }
+
+        /// <remarks/>
+        public int DocumentAttachmentsAmount
+        {
+            get
+            {
+                return this.documentAttachmentsAmountField;
+            }
+            set
+            {
+                this.documentAttachmentsAmountField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://kvs.fri.com/extraction-invalid-data/attachments/1.0.0")]
+    public partial class _AttachmentsBlockType
+    {
+
+        private _AttachmentDescriptionType attachmentDescriptionField;
+
+        /// <remarks/>
+        public _AttachmentDescriptionType AttachmentDescription
+        {
+            get
+            {
+                return this.attachmentDescriptionField;
+            }
+            set
+            {
+                this.attachmentDescriptionField = value;
+            }
+        }
+    }
+}
+
+
 
 //Формируется из импортированного wsdl
 //Обязательно указать  для AdapterMessage 
